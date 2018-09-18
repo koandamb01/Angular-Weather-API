@@ -1,0 +1,30 @@
+<div class="weather-deatil">
+  <ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center active">
+      <h1>{{ city }}</h1>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Humidity:
+      <span class="badge badge-primary badge-pill">{{ weather.main.humidity }}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Temperature (Average):
+      <span class="badge badge-primary badge-pill">{{ weather.main.temp }}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Temperature (High):
+      <span class="badge badge-primary badge-pill">{{ weather.main.temp_max }}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Temperature (Low):
+      <span class="badge badge-primary badge-pill">{{ weather.main.temp_min }}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Status:
+      <span class="badge badge-primary badge-pill">{{ weather.description }}</span>
+    </li>
+  </ul>
+</div>
+<div class="img-box">
+  <img [src]="weather.imageUrl">
+</div>

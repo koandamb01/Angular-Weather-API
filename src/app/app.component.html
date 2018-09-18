@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Dojo Weeather Forecast</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/seattle']">Seattle WA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/sanjose']">San Jose CA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/burbank']">Burbank CA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/dallas']">Dallas TX</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/washington']">Washington DC</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/chicago']">Chicago IL</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Welcome to my Weather API!</h1>
+      <p>ccess current weather data for any location on Earth including over 200,000 cities! Current weather is
+        frequently updated based on global models and data from more than 40,000 weather stations. Data is available in
+        JSON, XML, or HTML format.</p>
+      <p><a class="btn btn-primary btn-lg" href="https://openweathermap.org/api" target="_blank" role="button">Learn
+          more
+          &raquo;</a></p>
+    </div>
+  </div>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</main>
